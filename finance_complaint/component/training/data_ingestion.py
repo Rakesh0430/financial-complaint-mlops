@@ -130,7 +130,7 @@ class DataIngestion:
                 logger.info(f"Unable to download file {download_url.url}")
                 return
 
-            # to handle throatling requestion and can be slove if we wait for some second.
+            # to handle throatling requestion and can be solved if we wait for some second.
             content = data.content.decode("utf-8")
             wait_second = re.findall(r'\d+', content)
 
